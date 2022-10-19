@@ -1,0 +1,12 @@
+https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Introduction
+https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#I--Install-Jenkins-on-centos-7-server
+https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-1%3A-Install-Java
+https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-2%3A-Enable-the-Jenkins-repository
+https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-3%3A-Install-the-latest-stable-version-of-Jenkins
+https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-4%3A-Adjust-the-firewall
+https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#II--Setting-up-Jenkins-in-the-browser
+https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-1%3A-Open-the-jenkins-page-from-the-browser
+https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-2%3A-Copy-and-paste-the-administrator-password
+https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-3%3A-Install-suggested-plugins
+https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-4%3A-Create-first-admin-user
+https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-5%3A-Instance-Configuration
