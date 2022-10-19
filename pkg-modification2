@@ -1,0 +1,16 @@
+#!/bin/bash
+#Author: Kelvin
+#Date: October 19 2020
+#Description: modification of packages in Alpine
+
+apk install wget -y
+apk install net-tools -y
+apk install sysstat -y
+apk install finger -y
+apk install gcc -y
+apk install make -y
+apk install python3 -y
+apk install epel-release -y 
+apk install git -y
+
+echo "Packages successfully installed"
