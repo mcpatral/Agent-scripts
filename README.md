@@ -27,4 +27,4 @@ E- the script on package install is failing in ubuntu and alpine flavors please 
  script in project A to make it a little more dynamic.
 
 F- For better collaboration, all these script need to be stored in a vcs. please push all these in repo in github called 
-agent-scripts
+agent-scriptsor better collaboration, all these script need to be stored in a vcs. please push all these in repo in github called

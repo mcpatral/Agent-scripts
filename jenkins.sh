@@ -1,12 +1,26 @@
-https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Introduction
-https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#I--Install-Jenkins-on-centos-7-server
-https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-1%3A-Install-Java
-https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-2%3A-Enable-the-Jenkins-repository
-https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-3%3A-Install-the-latest-stable-version-of-Jenkins
-https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-4%3A-Adjust-the-firewall
-https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#II--Setting-up-Jenkins-in-the-browser
-https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-1%3A-Open-the-jenkins-page-from-the-browser
-https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-2%3A-Copy-and-paste-the-administrator-password
-https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-3%3A-Install-suggested-plugins
-https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-4%3A-Create-first-admin-user
-https://dataservicegroup.atlassian.net/wiki/spaces/RET/pages/2090205185/Jenkins+installation+on+CentOS+7.#Step-5%3A-Instance-Configuration
+#!/bin/bash
+#Author: Kelvin
+#Date: October 19 2020
+#Description: Jenkins installation:
+
+
+#Jenkins is an open-source, Java-based automation server that offers an easy way to set up a continuous integration and continuous delivery (CI/CD) pipeline.
+#Continuous integration (CI) is a DevOps practice in which team members regularly commit their code changes to the version control repository, after which automated builds and tests are run. 
+#Continuous delivery (CD) is a series of practices where code changes are automatically built, tested and deployed to production.
+#Since Jenkins is a Java application, we first need to install Java on our system. To do that, run the command: (make sure it is complete!): 
+sudo yum install java-11-openjdk-devel -y
+# Enable the Jenkins repository
+curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
+sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+# Install the latest stable version of Jenkins
+sudo yum install jenkins -y
+#After the installation process is completed, we need to start the service :
+sudo systemctl start jenkins
+#Check the status with: 
+sudo systemctl status jenkins
+#Also enable the Jenkins service to start on system boot: 
+sudo systemctl enable jenkins
+#Adjust the firewall
+sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
+sudo firewall-cmd --reload
+echo "Jenkins successfully installed"
