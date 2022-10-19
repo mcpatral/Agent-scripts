@@ -1,7 +1,7 @@
 #!/bin/bash
 #Author: Kelvin
 #Date: October 19 2020
-#Description: modification of packages for Ubuntu
+#Description: modification of packages in Ubuntu
 apt install wget -y
 apt install net-tools -y
 apt install sysstat -y
