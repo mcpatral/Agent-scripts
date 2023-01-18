@@ -7,11 +7,11 @@ pipeline {
         }
         stage ("Test")
         steps {
-            echo "Hello world"
+            echo "Hello test"
         }
         stage ("Deploy")
         steps {
-            echo "Hello world"
+            echo "Hello test"
         }
     }
     
